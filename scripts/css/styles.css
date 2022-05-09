@@ -1,0 +1,74 @@
+body::before {
+    content: "";
+    display: block;
+    height: 52px;
+}
+
+/* Carousel */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item > img {
+    max-height: 32rem;
+    min-width: 100%;
+    object-fit: cover;
+    object-position: 0 10%;
+    filter: brightness(50%);
+}
+
+@media (max-width: 913px) {
+    .carousel-item {
+        height: 20rem;
+    }
+
+    .carousel-item > img {
+        min-height: 20rem;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 425px) {
+    .carousel-item > .school {
+        object-fit: cover;
+        object-position: -150px 0%;
+    }
+
+    .carousel-item > .intro {
+        object-fit: cover;
+        object-position: -10px 0px;
+    }
+}
+/* End of Carousel */
+
+/* Newsletter */
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+/* End of Newsletter */
+
+.socials .fa {
+    padding: 20px;
+    font-size: 25px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 50%;
+    border: 2px rgb(255, 255, 255) solid;
+    transition-duration: 0.14s;
+    box-sizing: initial;
+    color: rgb(255, 255, 255);
+}
+
+.fa:hover {
+    color: rgb(13, 110, 253);
+    background: white;
+}
